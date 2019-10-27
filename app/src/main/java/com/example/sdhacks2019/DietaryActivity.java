@@ -16,19 +16,33 @@ public class DietaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dietary);
 
+
+
+
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBudgetMenu();
+                saveData();
             }
 
         });
+
+        loadData();
     }
 
     public void openBudgetMenu() {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
+
+    }
+
+    public void saveData() {
+
+    }
+
+    public void loadData() {
 
     }
 }
