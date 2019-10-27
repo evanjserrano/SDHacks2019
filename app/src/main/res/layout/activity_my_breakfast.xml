@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MyBreakfastActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:id="@+id/BreakfastLayout1"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonBreakfast1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast1"
+                android:fontFamily="@font/abel"
+                android:gravity="bottom"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="4dp"
+                android:scaleType="fitXY"
+                android:text="Hot Apple Cereal"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/ButtonBreakfast2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast2"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:scaleType="fitXY"
+                android:text="Chia Breakfast Pudding"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/BreakfastLayout2"
+            android:layout_below="@+id/BreakfastLayout1"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonBreakfast3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast3"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:scaleType="fitXY"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:paddingBottom="4dp"
+                android:text="Sweet Potato Waffles" />
+
+            <Button
+                android:id="@+id/ButtonBreakfast4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast4"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:scaleType="fitXY"
+                android:text="Chocolate Fudge Brownie Oatmeal" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/BreakfastLayout3"
+            android:layout_below="@+id/BreakfastLayout2"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonBreakfast5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast5"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:scaleType="fitXY"
+                android:text="Breakfast Sandwich" />
+
+            <Button
+                android:id="@+id/ButtonBreakfast6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast6"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:scaleType="fitXY"
+                android:text="Fruit Smoothies" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/BreakfastLayout4"
+            android:layout_below="@+id/BreakfastLayout3"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonBreakfast7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast7"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:scaleType="fitXY"
+                android:text="Oatmeal" />
+
+            <Button
+                android:id="@+id/ButtonBreakfast8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast8"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:scaleType="fitXY"
+                android:text="Avocado Toast" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/BreakfastLayout5"
+            android:layout_below="@+id/BreakfastLayout4"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonBreakfast9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast9"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:scaleType="fitXY"
+                android:text="Peanut Banana Cinnamon Smoothie" />
+
+            <Button
+                android:id="@+id/ButtonBreakfast10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:background="@mipmap/breakfast10"
+                android:gravity="bottom"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:scaleType="fitXY"
+                android:text="Honey Apple Toast" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

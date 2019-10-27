@@ -42,14 +42,16 @@
         android:id="@+id/no_meal_message"
         android:layout_width="261dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="84dp"
         android:fontFamily="@font/abel"
         android:text="@string/add_a_meal_to_start_prepping"
         android:textAllCaps="true"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -57,6 +59,7 @@
         android:layout_height="90dp"
         android:layout_marginStart="73dp"
         android:layout_marginTop="374dp"
+        android:contentDescription="@string/arrow"
         android:scaleType="centerInside"
         android:scaleX="1"
         android:scaleY="1"
@@ -67,5 +70,71 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:layout_constraintVertical_bias="0.924"
         app:srcCompat="@drawable/arrow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+
+        <LinearLayout android:id="@+id/Meal1"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonMeal1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:text="Empty Meal" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/Meal2"
+            android:layout_below="@+id/Meal1"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonMeal2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:text="Empty Meal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/Meal3"
+            android:layout_below="@+id/Meal2"
+            android:layout_height="110dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ButtonMeal3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:text="Empty Meal" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -96,5 +96,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lunchButton" />
 
+    <Button
+        android:id="@+id/FinishDailyMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30sp"
+        android:layout_marginBottom="30sp"
+
+        android:fontFamily="@font/abel"
+
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="Complete Meal"
+        android:textColor="#818080"
+        android:background="#65F07F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

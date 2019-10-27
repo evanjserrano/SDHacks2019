@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/LunchFooter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#689F38"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/ButtonLunchSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Select"
+            android:onClick="onClick"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/LunchScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LunchFooter"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/LunchScrollTextLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            >
+
+            <TextView
+                android:id="@+id/LunchRecipeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name of Recipe"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LunchRecipeNutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nutrition Facts"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/LunchRecipeIngredientTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\nINGREDIENTS:"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LunchRecipeIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List of Ingredients"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/LunchRecipeInstructionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\nCOOKING INSTRUCTIONS:"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LunchRecipeInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List of Instructions"
+                android:gravity="center"
+                android:textSize="25sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -81,7 +81,7 @@ public class DietActivity extends AppCompatActivity {
 
         editor.apply();
 
-        Toast.makeText(this, "Nice.", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Nice.", Toast.LENGTH_SHORT).show();
     }
 
     public void loadData() {

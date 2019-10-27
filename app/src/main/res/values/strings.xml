@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SDHacks2019</string>
+    <string name="app_name">LAMMICC</string>
     <string name="title_nutrition">Nutrition</string>
     <string name="title_recipes">Recipes</string>
     <string name="title_shopping">Shopping</string>
@@ -25,4 +25,5 @@
     <string name="breakfast">Breakfast</string>
     <string name="dinner">Dinner</string>
     <string name="background">bg</string>
+    <string name="arrow">arrow</string>
 </resources>
