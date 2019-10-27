@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class DailyActivity extends AppCompatActivity {
@@ -18,36 +19,38 @@ public class DailyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_daily);
 
-        breakfast = (Button) findViewById(R.id.breakfastButton);
+        breakfast = findViewById(R.id.breakfastButton);
         breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openBreakfastMenu();
+                //openBreakfastMenu();
             }
 
         });
 
-        lunch = (Button) findViewById(R.id.lunchButton);
+        lunch = findViewById(R.id.lunchButton);
         lunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLunchMenu();
+                //openLunchMenu();
             }
 
         });
 
-        dinner = (Button) findViewById(R.id.dinnerButton);
+        dinner = findViewById(R.id.dinnerButton);
         dinner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDinnerMenu();
+                //openDinnerMenu();
             }
 
         });
     }
-
+/*
     public void openBreakfastMenu() {
         Intent intent = new Intent(this, BreakfastActivity.class);
         startActivity(intent);
@@ -65,6 +68,8 @@ public class DailyActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    */
+
 
     public static void setBreakfast() {
         breakfast.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);

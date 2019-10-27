@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class DietaryActivity extends AppCompatActivity {
@@ -14,16 +15,16 @@ public class DietaryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_dietary);
 
 
-
-
-        button = (Button) findViewById(R.id.button);
+        button = findViewById(R.id.dietarybutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openBudgetMenu();
+                openMealMenu();
                 saveData();
             }
 
@@ -32,7 +33,7 @@ public class DietaryActivity extends AppCompatActivity {
         loadData();
     }
 
-    public void openBudgetMenu() {
+    public void openMealMenu() {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
 

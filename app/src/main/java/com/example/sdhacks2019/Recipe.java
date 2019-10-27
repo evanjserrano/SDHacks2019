@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.lang.*;
 import java.lang.String;
 
-class Recipe {
+private class Recipe {
     String name;
     int calories;
     ArrayList<String> ingredients;
@@ -43,7 +43,7 @@ class Recipe {
     }
 
     void setIngredients(String line) {
-        String values[] = line.split(",");
+        String[] values = line.split(",");
         ingredients = new ArrayList<String>(Arrays.asList(values));
     }
 
@@ -56,7 +56,7 @@ class Recipe {
     }
 
     void setShopping(String line) {
-        String values[] = line.split(",");
+        String[] values = line.split(",");
         shopping = new ArrayList(Arrays.asList(values));
     }
 
@@ -77,7 +77,7 @@ class Recipe {
     }
 
     void setMacros(String line) {
-        String values[] = line.split(",");
+        String[] values = line.split(",");
         macros.setCarb(Float.parseFloat(values[0]));
         macros.setFat(Float.parseFloat(values[1]));
         macros.setProtein(Float.parseFloat(values[2]));

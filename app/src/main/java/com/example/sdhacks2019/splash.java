@@ -1,30 +1,38 @@
 package com.example.sdhacks2019;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
-import android.widget.Button;
-
-
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 
-public class Main1Activity extends AppCompatActivity {
+public class splash extends AppCompatActivity {
 
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
 
-        button = (Button) findViewById(R.id.button);
+        super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_splash);
+
+        button = findViewById(R.id.splashbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 openDietMenu();
             }
-
         });
+
+
     }
 
     public void openDietMenu() {
@@ -32,4 +40,5 @@ public class Main1Activity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 }

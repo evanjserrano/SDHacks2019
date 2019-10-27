@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -23,24 +24,31 @@ public class DietActivity extends AppCompatActivity {
     public static final int VEGGIE_ID = 1;
     public static final int VEGAN_ID = 2;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if(isFirstTime()) {
+            SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+        }
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_diet);
 
-        radioDietGroup = (RadioGroup) findViewById(R.id.radioDiet);
+        radioDietGroup = findViewById(R.id.radioDiet);
+
 
         // diet radio buttons
-        RadioButton nodietRB = (RadioButton) findViewById(R.id.noDiet);
-        RadioButton veggieRB = (RadioButton) findViewById(R.id.vegetarian);
-        RadioButton veganRB = (RadioButton) findViewById(R.id.vegan);
+        RadioButton nodietRB = findViewById(R.id.noDiet);
+        RadioButton veggieRB = findViewById(R.id.vegetarian);
+        RadioButton veganRB = findViewById(R.id.vegan);
         nodietRB.setId(NODIET_ID);
         veggieRB.setId(VEGGIE_ID);
         veganRB.setId(VEGAN_ID);
 
 
-        button = (Button) findViewById(R.id.button);
+        button = findViewById(R.id.dietbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +58,13 @@ public class DietActivity extends AppCompatActivity {
 
         });
 
+
+
         loadData();
+
+
+
+
     }
 
     public void openDietaryMenu() {
@@ -67,7 +81,7 @@ public class DietActivity extends AppCompatActivity {
 
         editor.apply();
 
-        Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Nice.", Toast.LENGTH_SHORT).show();
     }
 
     public void loadData() {
@@ -75,4 +89,10 @@ public class DietActivity extends AppCompatActivity {
         radioDietGroup.clearCheck();
         radioDietGroup.check(sharedPreferences.getInt(DIET_KEY, NODIET_ID));
     }
+
+    public boolean isFirstTime() {
+        return getDatabasePath("your file name").exists();
+    }
+
+
 }
