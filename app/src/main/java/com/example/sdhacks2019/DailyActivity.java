@@ -64,6 +64,7 @@ public class DailyActivity extends AppCompatActivity {
 
         mealButton = findViewById(R.id.FinishDailyMeal);
         mealButton.setEnabled(false);
+        mealButton.setVisibility(View.INVISIBLE);
         mealButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -144,6 +145,7 @@ public class DailyActivity extends AppCompatActivity {
 
         if(breakfastSelected && lunchSelected && dinnerSelected) {
             mealButton.setEnabled(true);
+            mealButton.setVisibility(View.VISIBLE);
         }
     }
 
