@@ -27,7 +27,7 @@ public class DietaryActivity extends AppCompatActivity {
     }
 
     public void openBudgetMenu() {
-        Intent intent = new Intent(this, BudgetActivity.class);
+        Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
 
     }

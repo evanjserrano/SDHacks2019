@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BudgetActivity"></activity>
+        <activity
+            android:name=".Breakfast1Activity"
+            android:label="@string/title_activity_breakfast1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DinnerActivity" />
+        <activity android:name=".LunchActivity" />
+        <activity android:name=".BreakfastActivity" />
+        <activity android:name=".DailyActivity" />
+        <activity
+            android:name=".MealActivity"
+            android:label="@string/title_activity_meal"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DietaryActivity" />
         <activity android:name=".DietActivity" />
         <activity android:name=".MainActivity" />

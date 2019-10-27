@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".DailyActivity">
+
+    <Button
+        android:id="@+id/breakfastButton"
+        android:layout_width="289dp"
+        android:layout_height="137dp"
+        android:layout_above="@+id/lunchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="176dp"
+        android:text="Breakfast"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <Button
+        android:id="@+id/lunchButton"
+        android:layout_width="289dp"
+        android:layout_height="137dp"
+        android:layout_above="@+id/dinnerButton"
+        android:layout_centerHorizontal="true"
+        android:text="Lunch"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastButton"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <Button
+        android:id="@+id/dinnerButton"
+        android:layout_width="289dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:text="Dinner"
+        app:layout_constraintTop_toBottomOf="@+id/lunchButton"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:text="Daily Meal"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

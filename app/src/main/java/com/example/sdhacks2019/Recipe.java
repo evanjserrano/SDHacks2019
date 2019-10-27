@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.lang.*;
 import java.lang.String;
 
-private class Recipe {
+class Recipe {
     String name;
     int calories;
     ArrayList<String> ingredients;
