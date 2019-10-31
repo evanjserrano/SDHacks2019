@@ -74,63 +74,107 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="70dp"
+        android:paddingRight="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
 
-        <LinearLayout android:id="@+id/Meal1"
-            android:layout_height="110dp"
-            android:orientation="horizontal"
+        <LinearLayout
+            android:id="@+id/Meal1"
             android:layout_width="fill_parent"
-            android:gravity="center">
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day 1" />
 
             <Button
                 android:id="@+id/ButtonMeal1"
-                android:layout_width="match_parent"
+                android:layout_width="344dp"
                 android:layout_height="100dp"
                 android:layout_gravity="bottom"
-                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
                 android:scaleType="fitXY"
-                android:text="Empty Meal" />
+                android:text="Empty Meal"
+                android:textAlignment="center"
+                android:textSize="18dp" />
 
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/Meal2"
-            android:layout_below="@+id/Meal1"
-            android:layout_height="110dp"
-            android:orientation="horizontal"
+        <LinearLayout
+            android:id="@+id/Meal2"
             android:layout_width="fill_parent"
-            android:gravity="center">
+            android:layout_height="110dp"
+            android:layout_below="@+id/Meal1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day 2" />
 
             <Button
                 android:id="@+id/ButtonMeal2"
-                android:layout_width="match_parent"
+                android:layout_width="352dp"
                 android:layout_height="100dp"
                 android:layout_gravity="bottom"
-                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
                 android:scaleType="fitXY"
-                android:text="Empty Meal" />
+                android:text="Empty Meal"
+                android:textAlignment="center"
+                android:textSize="18dp" />
 
 
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/Meal3"
-            android:layout_below="@+id/Meal2"
-            android:layout_height="110dp"
-            android:orientation="horizontal"
+        <LinearLayout
+            android:id="@+id/Meal3"
             android:layout_width="fill_parent"
-            android:gravity="center">
+            android:layout_height="110dp"
+            android:layout_below="@+id/Meal2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day 3" />
 
             <Button
                 android:id="@+id/ButtonMeal3"
-                android:layout_width="match_parent"
+                android:layout_width="352dp"
                 android:layout_height="100dp"
                 android:layout_gravity="bottom"
-                android:layout_margin="10dp"
                 android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
                 android:scaleType="fitXY"
-                android:text="Empty Meal" />
+                android:text="Empty Meal"
+                android:textAlignment="center"
+                android:textSize="18dp" />
 
 
         </LinearLayout>

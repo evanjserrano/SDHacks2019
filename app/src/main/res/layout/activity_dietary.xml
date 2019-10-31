@@ -243,7 +243,8 @@
                 android:text="Shellfish"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <CheckBox
                 android:id="@+id/food"
@@ -259,7 +260,8 @@
                 android:text="FOOD"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

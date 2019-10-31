@@ -142,6 +142,7 @@ public class MealActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DailyActivity.class);
         startActivityForResult(intent, 5);
 
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -200,6 +201,8 @@ public class MealActivity extends AppCompatActivity {
                     thirdMealStrings[2][1] = data.getStringExtra("Dinner Nutrition");
                     thirdMealStrings[2][2] = data.getStringExtra("Dinner Ingredients");
                     thirdMealStrings[2][3] = data.getStringExtra("Dinner Instructions");
+
+
                 }
             }
         }
