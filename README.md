@@ -1,2 +1,2 @@
 # SDHacks2019
-LAMICC
+LAMICC (Look at me mom, I can cook!)
